@@ -44,15 +44,10 @@ export const App = () => {
     }
 
     return (
-        <>
-            <div className='p-2 text-right md:p-5'>
-                <a href="https://github.com/phuockaito" className='font-medium' target='_blank'>GitHub</a>
-            </div>
-            <div className='flex flex-col items-center justify-center w-full min-h-screen p-5 mx-auto divide-y'>
-                <Form2 keyCode={key} />
-                <Form1 keyCode={key} />
-                <Button size='large' danger className='!w-[120px]' onClick={() => setKey("")}>Reset</Button>
-            </div>
-        </>
+        <div className='flex flex-col items-center justify-center w-full min-h-screen p-5 mx-auto divide-y'>
+            <Form2 keyCode={key} />
+            <Form1 keyCode={key} />
+            <Button size='large' danger className='!w-[120px]' onClick={() => setKey("")}>Reset</Button>
+        </div>
     )
 }
