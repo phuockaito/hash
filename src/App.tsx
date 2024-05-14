@@ -20,7 +20,7 @@ export const App = () => {
                             rules={[{ required: true, message: "Vui lòng nhập khoá bí mật" }]}
                             label={<h1 className='text-xl font-bold text-center uppercase'>Khoá bí mật</h1>}
                         >
-                            <Input className='!w-[400px]' placeholder='khoá từ bí mật' />
+                            <Input className='!w-[300px]' placeholder='khoá từ bí mật' />
                         </Form.Item>
                         <Form.Item shouldUpdate>
                             {({ getFieldValue }) => {
