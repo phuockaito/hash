@@ -17,7 +17,7 @@ export const Form1 = ({ keyCode }: { keyCode: string }) => {
                                         setFieldValue("valueOutput", handleDecrypted(value, keyCode));
                                     }
                                     else {
-                                        message.error("Hash code chưa đúng");
+                                        message.error("Hash code hoặc cụm từ bí mật chưa đúng");
                                         setFieldValue("valueOutput", "");
                                     }
                                 } else {
@@ -50,7 +50,7 @@ export const Form1 = ({ keyCode }: { keyCode: string }) => {
                                                 setFieldValue("valueOutput", handleDecrypted(pasteText, keyCode));
                                             }
                                             else {
-                                                message.error("Hash code chưa đúng");
+                                                message.error("Hash code hoặc cụm từ bí mật chưa đúng");
                                                 setFieldValue("valueOutput", "");
                                             }
                                             setFieldValue("valueInput", pasteText);
